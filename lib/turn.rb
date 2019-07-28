@@ -28,7 +28,7 @@ def move(board, index, character = "X")
 end
 def turn(board)
   puts "Please enter 1-9:"
-  input = get.strip
+  input = gets.strip
   input = input.to_i 
   if input >= 1 && input <= 9
     puts "This is a valid move."
