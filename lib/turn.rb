@@ -31,4 +31,5 @@ def turn(board)
   else
     puts "Please enter a valid number"
     turn(board)
+  end
 end
