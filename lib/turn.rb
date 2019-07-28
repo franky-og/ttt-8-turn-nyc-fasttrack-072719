@@ -28,4 +28,7 @@ def turn(board)
   if input >= 1 && input <= 9
     puts "This is a valid move."
     move(board, input)
+  else
+    puts "Please enter a valid number"
+    turn(board)
 end
