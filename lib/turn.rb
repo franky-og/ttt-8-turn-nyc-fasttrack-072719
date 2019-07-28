@@ -18,12 +18,14 @@ def position_taken?(board, index)
   !(board[index] == "" || board[index] == " " || board[index] == nil)
 end
 
-def move(board, index, character)
+def move(board, index, character = "X")
   board[index] = character
 end
 def turn(board)
   puts "Please enter 1-9:"
   input = get.strip
-  input = input.to_i - 1
-  if input >= 0 && input <= 8 
+  input = input.to_i 
+  if input >= 1 && input <= 9
+    puts "This is a valid move."
+    move(board, input)
 end
