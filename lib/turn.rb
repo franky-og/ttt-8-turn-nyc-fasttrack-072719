@@ -23,6 +23,6 @@ def move(board, index, character)
 end
 def turn(board)
   puts "Please enter 1-9:"
-  get.strip
-  
+  input = get.strip
+  if input >= 1 && input <= 9 
 end
