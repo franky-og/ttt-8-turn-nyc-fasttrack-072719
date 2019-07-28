@@ -33,6 +33,7 @@ def turn(board)
   if valid_move?(board, input)
     puts "This is a valid move."
     move(board, input)
+    display_board(board)
   else
     puts "Please enter a valid number"
     turn(board)
